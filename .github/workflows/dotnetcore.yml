@@ -27,3 +27,8 @@ jobs:
     - name: Generate SBOM
       run: |
         dotnet CycloneDX -j Conduit.sln -o sbom.json
+
+
+    - name: check
+      run: |
+        ls -al
